@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.container{
+   height: 80vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   
+
+}
+.turn-container{
+    width: 170px;
+    height: 70px;
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    position: relative;
+    border-radius: 8px;
+     border: 7px solid #000;
+}
+.turn-container .turn-box.turn-box:nth-child(odd){
+    border-right:  7px solid #000;
+}
+
+.turn-container .turn-box{
+    /* border: 5px solid #000; */
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.turn-container .turn-box:nth-child(even){
+    border-left: none;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 70px;
+    background-color: #2a5792;
+    z-index: -1;
+}
+
+.container .game{
+    height: 400px;
+    width: 400px;
+     display: flex;
+     flex-wrap: wrap;
+     gap:12.5px;
+     border-radius: 8px;
+   /* justify-content: space-around;
+   align-items: center; */
+   background: #121212;
+   border:12.5px solid black;
+}
+.container .game .box{
+    height: 125px;
+    width: 125px;
+    border: none;
+    background: #fff;
+    font-size: 90px;
+    font-weight: lighter;
+   color: #8B1E3F;
+}
+.container .game .box:hover{
+    background-color: #2a5792; 
+}
+.result{
+    height: 15vh;
+    width: 100vw;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8B1E3F;
+}
+#result-text{
+    line-height:10vh;
+    text-align: center;
+    font-size: 80px;
+    height: 70%;
+}
+#new-game{
+    height: 30%;
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    color:#8B1E3F;
+    font-weight: 700;
+}
+#new-game:hover{
+     width: 120px;
+      height: 35%;
+      transition: .1s ease;
+      background:#8B1E3F;
+      color:#fff;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .new{
+    height: 125px;
+    width: 125px;
+    border: none;
+    background: #fff;
+    font-size: 90px;
+    font-weight: lighter;
+    color: #2a5792;
+    position: relative;
+} */
+/* .new::after{
+    content: "";
+    width:125px;
+    height: 12px;
+    background-color:black;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+} */
+
+
